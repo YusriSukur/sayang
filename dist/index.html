@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BX9DA65n.css">
+</head>
+<body>
+    <!-- Floating Hearts Container -->
+    <div id="hearts-container"></div>
+
+    <!-- Login Section -->
+    <section id="login-section">
+        <div class="login-card">
+            <div class="heart-icon-header">
+                <i data-lucide="heart" class="heart-fill"></i>
+            </div>
+            <h1>Happy Anniversary</h1>
+            <p class="subtitle">for my wife fiture ❤️</p>
+            
+            <div class="divider">
+                <i data-lucide="heart" class="small-heart"></i>
+            </div>
+
+            <form id="login-form">
+                <div class="input-group">
+                    <i data-lucide="user" class="input-label-icon"></i>
+                    <input type="text" id="partner-name" placeholder="Nama kamu cantik" required>
+                </div>
+                <div class="input-group">
+                    <i data-lucide="calendar" class="input-label-icon"></i>
+                    <input type="number" id="anniversary-date" placeholder="Kalau ingat ye" min="1" max="31" required>
+                </div>
+                <button type="submit" id="login-btn">
+                    Masuk <i data-lucide="heart"></i>
+                </button>
+            </form>
+
+            <p class="footer-text">Dibuat dengan cinta, hanya untuk kamu</p>
+        </div>
+    </section>
+
+    <!-- Slides Section (Hidden Initially) -->
+    <section id="slides-container" class="hidden">
+        <!-- Slide 2: The Question -->
+        <div class="slide active" id="slide-2">
+            <div class="login-card question-card">
+                <div class="heart-icon-header">
+                    <i data-lucide="heart" class="heart-fill"></i>
+                </div>
+                <h1>Sayang</h1>
+                <p class="question-text">mau lanjut atau ga? ❤️</p>
+                
+                <div class="divider">
+                    <i data-lucide="heart" class="small-heart"></i>
+                </div>
+
+                <div class="button-group">
+                    <button id="yes-btn">YES <i data-lucide="heart"></i></button>
+                    <button id="no-btn">NO <i data-lucide="heart-off"></i></button>
+                </div>
+
+                <div class="pagination">
+                    <i data-lucide="heart" class="mini-heart"></i>
+                    <span>2 / 9</span>
+                    <i data-lucide="heart" class="mini-heart"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Heartfelt Transition -->
+        <div class="slide" id="slide-3">
+            <div class="login-card question-card">
+                <div class="heart-icon-header">
+                    <i data-lucide="sparkles" class="heart-fill"></i>
+                </div>
+                <h1>YEAH SAYANG PILIH YES</h1>
+                <p class="question-text">SIAP SIAP SALTING YE ✨</p>
+                
+                <div class="divider">
+                    <i data-lucide="heart" class="small-heart"></i>
+                </div>
+
+                <div class="button-group">
+                    <button class="prev-slide-btn"><i data-lucide="arrow-left"></i> Kembali</button>
+                    <button id="to-final-btn">SIAP! <i data-lucide="heart"></i></button>
+                </div>
+
+                <div class="pagination">
+                    <i data-lucide="heart" class="mini-heart"></i>
+                    <span>3 / 9</span>
+                    <i data-lucide="heart" class="mini-heart"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 (Pindahan): Relationship Time -->
+        <div class="slide" id="slide-final">
+            <div class="login-card question-card">
+                <header class="hero">
+                    <h2 id="greeting">Happy Anniversary!</h2>
+                    <div id="counter-container">
+                        <p>Kita sudah bersama selama:</p>
+                        <div id="timer">
+                            <div class="timer-item"><span id="years">3</span><span>Tahun</span></div>
+                            <div class="timer-item"><span id="months">9</span><span>Bulan</span></div>
+                        </div>
+                    </div>
+                </header>
+                <div class="button-group">
+                    <button class="prev-slide-btn"><i data-lucide="arrow-left"></i> Kembali</button>
+                    <button class="next-slide-btn">Lanjut Sayang! <i data-lucide="arrow-right"></i></button>
+                </div>
+                <div class="pagination"><span>4 / 9</span></div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Penghantar (Text Only) -->
+        <div class="slide" id="slide-4">
+            <div class="login-card question-card">
+                <div class="heart-icon-header bounce">
+                    <i data-lucide="mail-open" class="heart-fill"></i>
+                </div>
+                <h2 class="cute-title">Penghantar</h2>
+                <p class="question-text">
+                    halo sayang ini bubby hehehehe, behh udah lama ga kasih wish untuk saya hehe jadi bubby buat website ni buat sayang , sayang bilang mau off semaleman kan jadi bubby buatkan la ni website biar terlihat berbeda sedikit ini sebagai penghantar ja hehehe jangan bosan baca ya nanti semoga sayang suka 
+                </p>
+                <div class="button-group">
+                    <button class="prev-slide-btn"><i data-lucide="arrow-left"></i> Kembali</button>
+                    <button class="next-slide-btn">Mulai Perjalanan ✨</button>
+                </div>
+                <div class="pagination"><span>5 / 9</span></div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Wish Anniversary -->
+        <div class="slide" id="slide-5">
+            <div class="wide-card scrapbook slide-content-flex">
+                <div class="photo-column">
+                    <div class="photo-stack">
+                        <div class="polaroid p1"><div class="tape"></div><img src="/assets/wish1-Do4QbvKf.png" alt="wish1"></div>
+                        <div class="polaroid p2"><div class="tape"></div><img src="/assets/wish2-D90KMjPx.png" alt="wish2"></div>
+                        <div class="polaroid p3"><div class="tape"></div><img src="/assets/wish3-DqxilcNj.png" alt="wish3"></div>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="paper-note">
+                        <h2>Wish Anniversary ❤️</h2>
+                        <div class="divider"><i data-lucide="heart" class="small-heart"></i></div>
+                        <div class="scroll-message-container">
+                            <p class="question-text message-long">
+                                yeyyy udah 3y9m bareng sayang terus HUAHAHAHAHAH, asekkk senang banget sama sayang terus nda ekspek bakal selama ini sama sayang hehee, lucky banget dong bubby dapat sayang sebab bole bertahan selama ini , lagipun pertahankan hubungan selama ini nda senang tau walaupun bubby banyak buat salah jadi bubby nda mau minta maaf di sini sebab nanti minta maaf juga ke sayang hehe, bubby mau bilang makasi banget ke sayang sebab mau bareng bubby terus walaupun bubby tau atau sadar diri nda sehebat dan sekeren cowo diluar sana bubby gatau sayang liat apa dari bubby tapi bubby beneran bersyukur (dalam hati sayang bilang "shit") hehe, bubby beneran niat buat ni website demi sayangg hehe , sayang jangan kemana mana ya walaupun bubby banyak tugas atau apapun itu terus kalau ada apa apa langsung bilang jangan biasakan bilang gapapa sebab itu buat bubby kesel ke sayang kalau gitu sebab sayang macam nutup nutupin bubby , kita buat hubungan ni macam orang orang orang tapi nda sama kita buat hubungan kita sendiri yang lebih keren beda dari orang lain perbaiki sama sama ya sayang kita hadapi bareng bareng terus ya sayang hehehhe Iloyousooomuchhhh sayanggggggggg 
+                            </p>
+                        </div>
+                        <div class="button-group">
+                            <button class="prev-slide-btn"><i data-lucide="arrow-left"></i> Kembali</button>
+                            <button class="next-slide-btn">Lanjut Sayang! <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="pagination"><span>6 / 9</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Terima Kasih -->
+        <div class="slide" id="slide-6">
+            <div class="wide-card scrapbook slide-content-flex">
+                <div class="photo-column">
+                    <div class="photo-stack">
+                        <div class="polaroid p1"><div class="tape"></div><img src="/assets/makasi4-CQp8hqjR.png" alt="makasi4"></div>
+                        <div class="polaroid p2"><div class="tape"></div><img src="/assets/makasi5-Dl-GwZuZ.png" alt="makasi5"></div>
+                        <div class="polaroid p3"><div class="tape"></div><img src="/assets/makasi6-vegYBJGY.png" alt="makasi6"></div>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="paper-note">
+                        <h2>Terima Kasih ❤️</h2>
+                        <div class="divider"><i data-lucide="heart" class="small-heart"></i></div>
+                        <div class="scroll-message-container">
+                            <p class="question-text message-long">
+                                sekkk masi dilanjut ni slide nya HUAAHAHAHA, nah di sini berbeda lagi pembahasanya siap siap baca sayang , okay bubby mau terima kasih banget ke sayang sebab sayang selalu ngertiin bubby walaupun bubby kurang Waktu ke sayang terus sayang selalu ada setiap bubby ada kiwww hehe, bubby terima kasih banget sama sayang sebab banyak hal yang sayang buat tu berdampak banget sama bubby terus banyak hal yang bubby belajar dari sayang , terima kasih juga suda tahan sifat bubby yang begini gatau la gimana caranya mau balas ke sayang kebaikan sayang tu setinggi gunung Kinabalu dan seluas laut pasifik , makasi banget sayang selalu bantu bubby apapun itu mau tugas atau masalah yang selalu , terus sayang belakangan ini selalu belikan barang barang baju Uniqlo bukan murah tu terus kemarin jalan lego lagi dibelikan 2 lagi ish ish ishhh itu bubby seneng bangettt dibeliin itu pas partnya hilang bubby beneran cari 1 kamar takut hilang nanti sayang marah and bubby simpan tu lego di meja bubby atas nanti bubby kasih di sesi foto sehhhhh sayang makasi banget ya udah kenalin bubby ke family sayang bubby gatau mereka gimana ke sayang and bubby walaupun bubby tau suda mama dadi farah and kaka gimana tapi bubby belum tau keluarga sayang yang lain gimana hehe makasi banget ya sayanggg 
+                            </p>
+                        </div>
+                        <div class="button-group">
+                            <button class="prev-slide-btn"><i data-lucide="arrow-left"></i> Kembali</button>
+                            <button class="next-slide-btn">Lanjut Lagi? <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="pagination"><span>7 / 9</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Minta Maaf -->
+        <div class="slide" id="slide-7">
+            <div class="wide-card scrapbook slide-content-flex">
+                <div class="photo-column">
+                    <div class="photo-stack">
+                        <div class="polaroid p1"><div class="tape"></div><img src="/assets/fam7-LFHcUUw2.png" alt="fam7"></div>
+                        <div class="polaroid p2"><div class="tape"></div><img src="/assets/fam8-BWy2ipqg.png" alt="fam8"></div>
+                        <div class="polaroid p3"><div class="tape"></div><img src="/assets/fam9-B8t010Uz.png" alt="fam9"></div>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="paper-note">
+                        <h2>Minta Maaf 🙏</h2>
+                        <div class="divider"><i data-lucide="heart" class="small-heart"></i></div>
+                        <div class="scroll-message-container">
+                            <p class="question-text message-long">
+                                anjayyy masi tahan mau baca ka ni HAHAHAHHA udah slide ke berapa ni okay lanjut shhhhhhh, disini bubby mau minta maaf ke sayang kalau bubby banyak buat salah ke sayang belakangan ini tapi bukan belakangan ini ja tapi setiap jam setiap detik setiap hari setiap bulan dan setiap tahun bubby buat salah terus ke sayang terus 2 kesalahan bubby paling fatal pas udahan sama itu sayang know la cht cwe , bubby beneran minta maaf ke sayang itu bubby ga ada niatan mau tinggalin sayang bubby pun gatau kenapa bubby buat gitu ke sayanggg bubby kadang masi malu sama sayang kalau mau bahas jadi kalau sayang ungkit ungkit bubby emosi sebab mcm malu gamau diungkit terus maybe sayang berat untuk lupakan itu , bubby mau minta maaf sebab bubby kadang ga ada disisi sayang kalau lagi butuh apapun itu kadang bubby fikir bubby kemana aja ngapain aja kenapa bubby ga disitu padahal kalau bubby sayang selalu ada , sayang bubby mau minta maaf juga kalau bubby kurang treat atau kasih sayang sesuatu yang berharga buat sayang sebenarnya banyak yang bubby mau kasih tapi bingung gimana em map bangetttttttt sayang jangan cape sama bubby ya kalau cape gapapa bilang aja langsung tapi kalau bole jangan pas sama teman atau lagi sama keluarga sebab bubby susah mau tutup depan dorang kadang bubby emosi juga map bangettt sayang bubby gatau mau minta maaf lagi blank sebab banyak bubby buat salah sama sayang em semoga sayang maapin bubby (walaupun selalu maapin) sayang kalau cape atau apa apa bilang langsung ke bubby ya
+                            </p>
+                        </div>
+                        <div class="button-group">
+                            <button class="prev-slide-btn"><i data-lucide="arrow-left"></i> Kembali</button>
+                            <button class="next-slide-btn">Lanjut Sayang! <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="pagination"><span>8 / 9</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Tetap Semangat -->
+        <div class="slide" id="slide-8">
+            <div class="wide-card scrapbook slide-content-flex">
+                <div class="photo-column">
+                    <div class="photo-stack">
+                        <div class="polaroid p1"><div class="tape"></div><img src="/assets/semangat10-CgZzGmuA.png" alt="semangat10"></div>
+                        <div class="polaroid p2"><div class="tape"></div><img src="/assets/semangat11-DOLjWt0B.png" alt="semangat11"></div>
+                        <div class="polaroid p3"><div class="tape"></div><img src="/assets/semangat12-B9Foru2J.png" alt="semangat12"></div>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <div class="paper-note">
+                        <h2>Tetap semangat 💪</h2>
+                        <div class="divider"><i data-lucide="heart" class="small-heart"></i></div>
+                        <div class="scroll-message-container">
+                            <p class="question-text message-long">
+                                cihuy lanjut , sayang semangat ya kuliah nya apapun itu mesti dihadapi sebab sayang dah dewasa dan udah kuliah sayang tau mana betul mana salah bubby mau ingetin ini penting JAGA KESEHATAN sama UTAMAKAN ORANG TUA sebab dua ini paling mahal menurut bubby kalau bole sayang fikirkan dari sekarang pasal sakit sayang ke ortu bubby jujur ga tahan suda mau ngomong ke mama tapi bubby hormati sayang itu keputusan sayang kalau bole secepatnya sebab apapun itu semua butuh doa dari orang tua sayang bubby tau sayang berat mau bilang ke mereka sebab ini tapi coba sayang fikir sisi baiknya sayang mau sembuhkan biarpun orang tua tu marah dieawal and shock tapi itu memang tanggung jawab mereka sayang sebagai orang jadi sayang harus ada tanggung jawab juga sebagai anak bubby ga suka sayang buying time terus untuk keep dari ortu bubby rasa berat banget beban bubby pegang sekarang bubby mau sayang sembuh and ga sakit lagi ini bubby kasih sayang sadar kalau bisa sayang sadar okay sayanggg, terus kuliah sayang tau kan batasnya dari outfit sayang terus pergaulan sayang apalagi sama teman pandai pandai pilih teman jangan yang datang pas butuh ja jangan biasakan buatkan orang tugas kalau dorang mnta bantu okay gapap bantu tapi jangan buatkan gimana drng mau tau and pandai kalau selalu dibuatkan sayang terus okay sayang pentingin tugas sayang dulu baru drg kalau sayang rasa sayang sudah aman tugas atau apa" okay bole tolong drng bubby ga larang juga tapi ga suka ja tengok sayang selalu gitu okayyy hehehe
+                            </p>
+                        </div>
+                        <div class="button-group">
+                            <button class="prev-slide-btn"><i data-lucide="arrow-left"></i> Kembali</button>
+                            <button id="restart-btn" class="next-slide-btn">Ulangi Momen ✨</button>
+                        </div>
+                    </div>
+                    <div class="pagination"><span>9 / 9</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
