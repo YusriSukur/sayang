@@ -38,40 +38,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(createHeart, 300);
 
+    const API_URL = '/api';
+
     // 2. Login Logic
-    loginForm.addEventListener('submit', (e) => {
+    loginForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
         const name = document.getElementById('partner-name').value;
         const day = document.getElementById('anniversary-date').value;
         
-        // 22 Validation
-        if (day !== "22") {
-            alert("Masa lupa tanggal jadian sendiri? Coba lagi ya sayang! 😜");
-            return;
-        }
+        try {
+            const response = await fetch(`${API_URL}/login`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username: name, anniversaryDate: day })
+            });
 
-        // Set to August 22, 2022 (Month 7 = August)
-        const defaultMonth = 7; 
-        const defaultYear = 2022;
-        
-        anniversaryDate = new Date(defaultYear, defaultMonth, day);
+            const data = await response.json();
 
-        // Personalize Greeting
-        greeting.innerText = `Happy Anniversary, ${name}! ❤️`;
-        
-        // Transition to Slide Container
-        loginSection.style.opacity = '0';
-        loginSection.style.transform = 'scale(1.1)';
-        
-        setTimeout(() => {
-            loginSection.classList.add('hidden');
-            slidesContainer.classList.remove('hidden');
-            slidesContainer.style.opacity = '0';
+            if (!response.ok) {
+                alert(data.error || 'Login gagal');
+                return;
+            }
+
+            anniversaryDate = new Date(2022, 7, day);
+            greeting.innerText = `Happy Anniversary, ${data.user.username}! ❤️`;
+            
+            // Transition
+            loginSection.style.opacity = '0';
+            loginSection.style.transform = 'scale(1.1)';
+            
             setTimeout(() => {
-                slidesContainer.style.opacity = '1';
-            }, 50);
-        }, 800);
+                loginSection.classList.add('hidden');
+                slidesContainer.classList.remove('hidden');
+                slidesContainer.style.opacity = '0';
+                setTimeout(() => {
+                    slidesContainer.style.opacity = '1';
+                }, 50);
+            }, 800);
+
+        } catch (err) {
+            console.error(err);
+            alert('Gagal menghubungi server. Pastikan backend jalan ya!');
+        }
     });
 
     // 3. Slide 2: NO Button Sequence Logic
