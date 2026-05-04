@@ -1,8 +1,11 @@
-const express = require('express');
-const { Pool } = require('pg');
-const jwt = require('jsonwebtoken');
-const cors = require('cors');
-require('dotenv').config();
+import express from 'express';
+import pg from 'pg';
+const { Pool } = pg;
+import jwt from 'jsonwebtoken';
+import cors from 'cors';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 app.use(express.json());
@@ -32,7 +35,7 @@ const initDb = async () => {
 
 // Login Endpoint
 app.post('/api/login', async (req, res) => {
-  await initDb(); // Ensure table exists
+  await initDb();
   const { username, anniversaryDate } = req.body;
 
   try {
@@ -59,5 +62,4 @@ app.post('/api/login', async (req, res) => {
   }
 });
 
-// For Vercel, we export the app
-module.exports = app;
+export default app;
