@@ -10,6 +10,7 @@ app.use(cors());
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false }
 });
 
 // Initialize Database Table (Safe for Serverless)
